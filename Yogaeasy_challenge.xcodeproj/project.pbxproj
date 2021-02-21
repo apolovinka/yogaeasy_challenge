@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		113268F725E1327700EB44DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113268F625E1327700EB44DC /* AppDelegate.swift */; };
+		1132690025E1327800EB44DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113268FF25E1327800EB44DC /* Assets.xcassets */; };
+		1132690325E1327800EB44DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1132690125E1327800EB44DC /* LaunchScreen.storyboard */; };
+		1132691025E1334200EB44DC /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132690F25E1334200EB44DC /* Configuration.swift */; };
+		1132692825E1351900EB44DC /* ApplicationAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132692725E1351900EB44DC /* ApplicationAssembler.swift */; };
+		1132693A25E162A600EB44DC /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132693925E162A600EB44DC /* ViewControllerFactory.swift */; };
+		1132694B25E163A100EB44DC /* UIViewController+Modules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132694A25E163A100EB44DC /* UIViewController+Modules.swift */; };
+		1132695525E1654C00EB44DC /* ViewControllerFactoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132695425E1654C00EB44DC /* ViewControllerFactoryAssembly.swift */; };
+		1132696125E168A000EB44DC /* ServicesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132696025E168A000EB44DC /* ServicesAssembly.swift */; };
+		1132696425E1692300EB44DC /* ProductsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132696325E1692300EB44DC /* ProductsService.swift */; };
+		1132696825E1695800EB44DC /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132696725E1695800EB44DC /* Product.swift */; };
+		1132696C25E16A1800EB44DC /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132696B25E16A1800EB44DC /* Networking.swift */; };
+		1132696F25E16A5B00EB44DC /* YogaeasyEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132696E25E16A5B00EB44DC /* YogaeasyEndpoint.swift */; };
+		1132697625E16DC600EB44DC /* NetworkingURLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132697525E16DC600EB44DC /* NetworkingURLRequestBuilder.swift */; };
+		1132697F25E16E4000EB44DC /* YogaeasyAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132697E25E16E4000EB44DC /* YogaeasyAPIClient.swift */; };
+		1132698325E170DD00EB44DC /* YogaeasyReponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132698225E170DD00EB44DC /* YogaeasyReponse.swift */; };
+		1132698B25E175BF00EB44DC /* ProductsModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132698725E175BF00EB44DC /* ProductsModuleAssembly.swift */; };
+		1132698C25E175BF00EB44DC /* ProductsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132698825E175BF00EB44DC /* ProductsRouter.swift */; };
+		1132698D25E175BF00EB44DC /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132698925E175BF00EB44DC /* ProductsViewController.swift */; };
+		1132698E25E175BF00EB44DC /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132698A25E175BF00EB44DC /* ProductsViewModel.swift */; };
+		1132699725E17DD200EB44DC /* NetworkingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132699625E17DD200EB44DC /* NetworkingAssembly.swift */; };
+		113269A025E17FB400EB44DC /* ProductDetailModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132699C25E17FB400EB44DC /* ProductDetailModuleAssembly.swift */; };
+		113269A125E17FB400EB44DC /* ProductDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132699D25E17FB400EB44DC /* ProductDetailRouter.swift */; };
+		113269A225E17FB400EB44DC /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132699E25E17FB400EB44DC /* ProductDetailViewController.swift */; };
+		113269A325E17FB400EB44DC /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132699F25E17FB400EB44DC /* ProductDetailViewModel.swift */; };
+		113269AD25E1AC6800EB44DC /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113269AB25E1AC6800EB44DC /* ProductCell.swift */; };
+		113269AE25E1AC6800EB44DC /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113269AC25E1AC6800EB44DC /* ProductCell.xib */; };
+		113269B125E1ACDF00EB44DC /* ProductsDisplayDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113269B025E1ACDF00EB44DC /* ProductsDisplayDataManager.swift */; };
+		113269B825E1B92C00EB44DC /* UIImage+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113269B725E1B92C00EB44DC /* UIImage+Extenstion.swift */; };
+		113269C225E1BC8200EB44DC /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113269C125E1BC8200EB44DC /* R.generated.swift */; };
+		113269DA25E2E73700EB44DC /* AlertDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113269D925E2E73700EB44DC /* AlertDisplayable.swift */; };
+		FA01ED660321739F2EE12177 /* Pods_Yogaeasy_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DBFBD123EDEDFF62F8B7E8F /* Pods_Yogaeasy_challenge.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		113268F325E1327700EB44DC /* Yogaeasy_challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yogaeasy_challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		113268F625E1327700EB44DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		113268FF25E1327800EB44DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1132690225E1327800EB44DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1132690425E1327800EB44DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1132690F25E1334200EB44DC /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		1132692725E1351900EB44DC /* ApplicationAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembler.swift; sourceTree = "<group>"; };
+		1132693925E162A600EB44DC /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		1132694A25E163A100EB44DC /* UIViewController+Modules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Modules.swift"; sourceTree = "<group>"; };
+		1132695425E1654C00EB44DC /* ViewControllerFactoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactoryAssembly.swift; sourceTree = "<group>"; };
+		1132696025E168A000EB44DC /* ServicesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesAssembly.swift; sourceTree = "<group>"; };
+		1132696325E1692300EB44DC /* ProductsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsService.swift; sourceTree = "<group>"; };
+		1132696725E1695800EB44DC /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		1132696B25E16A1800EB44DC /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		1132696E25E16A5B00EB44DC /* YogaeasyEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = YogaeasyEndpoint.swift; path = ../Endpoints/YogaeasyEndpoint.swift; sourceTree = "<group>"; };
+		1132697525E16DC600EB44DC /* NetworkingURLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingURLRequestBuilder.swift; sourceTree = "<group>"; };
+		1132697E25E16E4000EB44DC /* YogaeasyAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaeasyAPIClient.swift; sourceTree = "<group>"; };
+		1132698225E170DD00EB44DC /* YogaeasyReponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaeasyReponse.swift; sourceTree = "<group>"; };
+		1132698725E175BF00EB44DC /* ProductsModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsModuleAssembly.swift; sourceTree = "<group>"; };
+		1132698825E175BF00EB44DC /* ProductsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRouter.swift; sourceTree = "<group>"; };
+		1132698925E175BF00EB44DC /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		1132698A25E175BF00EB44DC /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		1132699625E17DD200EB44DC /* NetworkingAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingAssembly.swift; sourceTree = "<group>"; };
+		1132699C25E17FB400EB44DC /* ProductDetailModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailModuleAssembly.swift; sourceTree = "<group>"; };
+		1132699D25E17FB400EB44DC /* ProductDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailRouter.swift; sourceTree = "<group>"; };
+		1132699E25E17FB400EB44DC /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		1132699F25E17FB400EB44DC /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
+		113269AB25E1AC6800EB44DC /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		113269AC25E1AC6800EB44DC /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		113269B025E1ACDF00EB44DC /* ProductsDisplayDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsDisplayDataManager.swift; sourceTree = "<group>"; };
+		113269B725E1B92C00EB44DC /* UIImage+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extenstion.swift"; sourceTree = "<group>"; };
+		113269C125E1BC8200EB44DC /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		113269D925E2E73700EB44DC /* AlertDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDisplayable.swift; sourceTree = "<group>"; };
+		550390A700F3B876C19CE0A4 /* Pods-Yogaeasy_challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogaeasy_challenge.debug.xcconfig"; path = "Target Support Files/Pods-Yogaeasy_challenge/Pods-Yogaeasy_challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		8DBFBD123EDEDFF62F8B7E8F /* Pods_Yogaeasy_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yogaeasy_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D15A5AA2003EF4E4D83AA7DB /* Pods-Yogaeasy_challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yogaeasy_challenge.release.xcconfig"; path = "Target Support Files/Pods-Yogaeasy_challenge/Pods-Yogaeasy_challenge.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		113268F025E1327700EB44DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA01ED660321739F2EE12177 /* Pods_Yogaeasy_challenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		113268EA25E1327700EB44DC = {
+			isa = PBXGroup;
+			children = (
+				113268F525E1327700EB44DC /* Yogaeasy_challenge */,
+				113268F425E1327700EB44DC /* Products */,
+				936CD61A1661E5E9BD201C3B /* Pods */,
+				7DE28781E72BD66457B469B9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		113268F425E1327700EB44DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				113268F325E1327700EB44DC /* Yogaeasy_challenge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		113268F525E1327700EB44DC /* Yogaeasy_challenge */ = {
+			isa = PBXGroup;
+			children = (
+				1132690B25E1328000EB44DC /* Classes */,
+				1132690D25E1329A00EB44DC /* Resources */,
+				1132690E25E132A800EB44DC /* Supporting Files */,
+			);
+			path = Yogaeasy_challenge;
+			sourceTree = "<group>";
+		};
+		1132690B25E1328000EB44DC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				113268F625E1327700EB44DC /* AppDelegate.swift */,
+				1132690F25E1334200EB44DC /* Configuration.swift */,
+				1132692725E1351900EB44DC /* ApplicationAssembler.swift */,
+				1132691525E1336900EB44DC /* Presentation */,
+				1132691625E1337200EB44DC /* Services */,
+				1132696625E1694B00EB44DC /* Models */,
+				1132691425E1334900EB44DC /* Networking */,
+				1132694825E1638F00EB44DC /* Core */,
+				113269D725E2E71E00EB44DC /* Common */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1132690D25E1329A00EB44DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1132690125E1327800EB44DC /* LaunchScreen.storyboard */,
+				113268FF25E1327800EB44DC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1132690E25E132A800EB44DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				113269C125E1BC8200EB44DC /* R.generated.swift */,
+				1132690425E1327800EB44DC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1132691425E1334900EB44DC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1132699625E17DD200EB44DC /* NetworkingAssembly.swift */,
+				1132697825E16E1600EB44DC /* YogaeasyClient */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1132691525E1336900EB44DC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				1132695325E1653700EB44DC /* ViewControllerFactory */,
+				1132691825E1348700EB44DC /* Modules */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		1132691625E1337200EB44DC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1132696025E168A000EB44DC /* ServicesAssembly.swift */,
+				1132696325E1692300EB44DC /* ProductsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1132691825E1348700EB44DC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1132698625E175AC00EB44DC /* Products */,
+				1132699B25E17F9F00EB44DC /* ProductDetail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1132694825E1638F00EB44DC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1132699525E17DB300EB44DC /* Networking */,
+				1132694925E1639300EB44DC /* MVVM */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1132694925E1639300EB44DC /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				1132694A25E163A100EB44DC /* UIViewController+Modules.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		1132695325E1653700EB44DC /* ViewControllerFactory */ = {
+			isa = PBXGroup;
+			children = (
+				1132695425E1654C00EB44DC /* ViewControllerFactoryAssembly.swift */,
+				1132693925E162A600EB44DC /* ViewControllerFactory.swift */,
+			);
+			path = ViewControllerFactory;
+			sourceTree = "<group>";
+		};
+		1132696625E1694B00EB44DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1132696725E1695800EB44DC /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1132697825E16E1600EB44DC /* YogaeasyClient */ = {
+			isa = PBXGroup;
+			children = (
+				1132697E25E16E4000EB44DC /* YogaeasyAPIClient.swift */,
+				1132696E25E16A5B00EB44DC /* YogaeasyEndpoint.swift */,
+				1132698225E170DD00EB44DC /* YogaeasyReponse.swift */,
+			);
+			path = YogaeasyClient;
+			sourceTree = "<group>";
+		};
+		1132698625E175AC00EB44DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1132698725E175BF00EB44DC /* ProductsModuleAssembly.swift */,
+				1132698825E175BF00EB44DC /* ProductsRouter.swift */,
+				1132698925E175BF00EB44DC /* ProductsViewController.swift */,
+				1132698A25E175BF00EB44DC /* ProductsViewModel.swift */,
+				113269B025E1ACDF00EB44DC /* ProductsDisplayDataManager.swift */,
+				113269A825E18D2900EB44DC /* Cells */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		1132699525E17DB300EB44DC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1132696B25E16A1800EB44DC /* Networking.swift */,
+				1132697525E16DC600EB44DC /* NetworkingURLRequestBuilder.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1132699B25E17F9F00EB44DC /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+				1132699C25E17FB400EB44DC /* ProductDetailModuleAssembly.swift */,
+				1132699D25E17FB400EB44DC /* ProductDetailRouter.swift */,
+				1132699E25E17FB400EB44DC /* ProductDetailViewController.swift */,
+				1132699F25E17FB400EB44DC /* ProductDetailViewModel.swift */,
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		113269A825E18D2900EB44DC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				113269AB25E1AC6800EB44DC /* ProductCell.swift */,
+				113269AC25E1AC6800EB44DC /* ProductCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		113269B625E1B91B00EB44DC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				113269B725E1B92C00EB44DC /* UIImage+Extenstion.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		113269D725E2E71E00EB44DC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				113269D825E2E72800EB44DC /* Helpers */,
+				113269B625E1B91B00EB44DC /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		113269D825E2E72800EB44DC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				113269D925E2E73700EB44DC /* AlertDisplayable.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7DE28781E72BD66457B469B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DBFBD123EDEDFF62F8B7E8F /* Pods_Yogaeasy_challenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		936CD61A1661E5E9BD201C3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				550390A700F3B876C19CE0A4 /* Pods-Yogaeasy_challenge.debug.xcconfig */,
+				D15A5AA2003EF4E4D83AA7DB /* Pods-Yogaeasy_challenge.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		113268F225E1327700EB44DC /* Yogaeasy_challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1132690725E1327800EB44DC /* Build configuration list for PBXNativeTarget "Yogaeasy_challenge" */;
+			buildPhases = (
+				CD2C1735D895D7B54A4AE5F8 /* [CP] Check Pods Manifest.lock */,
+				113269BB25E1BA9800EB44DC /* ShellScript */,
+				113268EF25E1327700EB44DC /* Sources */,
+				113268F025E1327700EB44DC /* Frameworks */,
+				113268F125E1327700EB44DC /* Resources */,
+				3E47E286F5E2DDB23803ECED /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yogaeasy_challenge;
+			productName = Yogaeasy_challenge;
+			productReference = 113268F325E1327700EB44DC /* Yogaeasy_challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		113268EB25E1327700EB44DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					113268F225E1327700EB44DC = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 113268EE25E1327700EB44DC /* Build configuration list for PBXProject "Yogaeasy_challenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 113268EA25E1327700EB44DC;
+			productRefGroup = 113268F425E1327700EB44DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				113268F225E1327700EB44DC /* Yogaeasy_challenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		113268F125E1327700EB44DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1132690325E1327800EB44DC /* LaunchScreen.storyboard in Resources */,
+				113269AE25E1AC6800EB44DC /* ProductCell.xib in Resources */,
+				1132690025E1327800EB44DC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		113269BB25E1BA9800EB44DC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		3E47E286F5E2DDB23803ECED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yogaeasy_challenge/Pods-Yogaeasy_challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yogaeasy_challenge/Pods-Yogaeasy_challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yogaeasy_challenge/Pods-Yogaeasy_challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD2C1735D895D7B54A4AE5F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yogaeasy_challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		113268EF25E1327700EB44DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				113268F725E1327700EB44DC /* AppDelegate.swift in Sources */,
+				1132696125E168A000EB44DC /* ServicesAssembly.swift in Sources */,
+				113269A125E17FB400EB44DC /* ProductDetailRouter.swift in Sources */,
+				1132692825E1351900EB44DC /* ApplicationAssembler.swift in Sources */,
+				1132695525E1654C00EB44DC /* ViewControllerFactoryAssembly.swift in Sources */,
+				1132699725E17DD200EB44DC /* NetworkingAssembly.swift in Sources */,
+				1132698D25E175BF00EB44DC /* ProductsViewController.swift in Sources */,
+				113269A225E17FB400EB44DC /* ProductDetailViewController.swift in Sources */,
+				113269A025E17FB400EB44DC /* ProductDetailModuleAssembly.swift in Sources */,
+				1132698325E170DD00EB44DC /* YogaeasyReponse.swift in Sources */,
+				1132698E25E175BF00EB44DC /* ProductsViewModel.swift in Sources */,
+				1132691025E1334200EB44DC /* Configuration.swift in Sources */,
+				1132697625E16DC600EB44DC /* NetworkingURLRequestBuilder.swift in Sources */,
+				1132698C25E175BF00EB44DC /* ProductsRouter.swift in Sources */,
+				1132697F25E16E4000EB44DC /* YogaeasyAPIClient.swift in Sources */,
+				113269C225E1BC8200EB44DC /* R.generated.swift in Sources */,
+				1132693A25E162A600EB44DC /* ViewControllerFactory.swift in Sources */,
+				1132696C25E16A1800EB44DC /* Networking.swift in Sources */,
+				113269B125E1ACDF00EB44DC /* ProductsDisplayDataManager.swift in Sources */,
+				113269A325E17FB400EB44DC /* ProductDetailViewModel.swift in Sources */,
+				1132696F25E16A5B00EB44DC /* YogaeasyEndpoint.swift in Sources */,
+				1132694B25E163A100EB44DC /* UIViewController+Modules.swift in Sources */,
+				1132698B25E175BF00EB44DC /* ProductsModuleAssembly.swift in Sources */,
+				113269DA25E2E73700EB44DC /* AlertDisplayable.swift in Sources */,
+				113269AD25E1AC6800EB44DC /* ProductCell.swift in Sources */,
+				1132696425E1692300EB44DC /* ProductsService.swift in Sources */,
+				113269B825E1B92C00EB44DC /* UIImage+Extenstion.swift in Sources */,
+				1132696825E1695800EB44DC /* Product.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1132690125E1327800EB44DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1132690225E1327800EB44DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1132690525E1327800EB44DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1132690625E1327800EB44DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1132690825E1327800EB44DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 550390A700F3B876C19CE0A4 /* Pods-Yogaeasy_challenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Yogaeasy_challenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ye.Yogaeasy-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1132690925E1327800EB44DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D15A5AA2003EF4E4D83AA7DB /* Pods-Yogaeasy_challenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Yogaeasy_challenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ye.Yogaeasy-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		113268EE25E1327700EB44DC /* Build configuration list for PBXProject "Yogaeasy_challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1132690525E1327800EB44DC /* Debug */,
+				1132690625E1327800EB44DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1132690725E1327800EB44DC /* Build configuration list for PBXNativeTarget "Yogaeasy_challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1132690825E1327800EB44DC /* Debug */,
+				1132690925E1327800EB44DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 113268EB25E1327700EB44DC /* Project object */;
+}
