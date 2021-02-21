@@ -88,3 +88,57 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+bin/
+.DS_Store
+*.xccheckout
+testresults/
+test_results/
+build-iPhoneSimulator/
+build-iPhoneOS/
+*.swp
+*~.nib
+*.nib
+*.pbxuser
+*.perspective
+*.perspectivev3
+*xcuserdata*
+.idea
+*.iml
+.repl_history
+build/
+.bundle
+resources/*.momd
+resources/*.storyboardc
+*.o
+.dat*
+*.log
+*.orig
+*.bridgesupport
+doc/
+*.tmproj
+.gems
+.rakeTasks
+.rbenv-version
+DerivedDataCache/
+tmp/
+.yardoc
+phrase_config.rb
+*.tar.gz
+resources/zh.lproj/
+keychain/.*
+.ruby-version
+fastlane/report.xml
+*.generated.swift
+
+# adobe documentation
+Docs/html
+
+####
+# Xcode build files -
+#
+# NB: slash on the end, so we only remove the FOLDER, not any files that were badly named "DerivedData"
+
+DerivedData/
+
+# NB: slash on the end, so we only remove the FOLDER, not any files that were badly named "build"
