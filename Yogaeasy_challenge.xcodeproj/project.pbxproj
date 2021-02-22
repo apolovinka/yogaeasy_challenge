@@ -56,7 +56,7 @@
 		1132696325E1692300EB44DC /* ProductsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsService.swift; sourceTree = "<group>"; };
 		1132696725E1695800EB44DC /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		1132696B25E16A1800EB44DC /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
-		1132696E25E16A5B00EB44DC /* YogaeasyEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = YogaeasyEndpoint.swift; path = ../Endpoints/YogaeasyEndpoint.swift; sourceTree = "<group>"; };
+		1132696E25E16A5B00EB44DC /* YogaeasyEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaeasyEndpoint.swift; sourceTree = "<group>"; };
 		1132697525E16DC600EB44DC /* NetworkingURLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingURLRequestBuilder.swift; sourceTree = "<group>"; };
 		1132697E25E16E4000EB44DC /* YogaeasyAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaeasyAPIClient.swift; sourceTree = "<group>"; };
 		1132698225E170DD00EB44DC /* YogaeasyReponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaeasyReponse.swift; sourceTree = "<group>"; };
