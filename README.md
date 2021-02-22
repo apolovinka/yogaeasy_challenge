@@ -23,7 +23,7 @@ Cocoapods is the dependencies manager in this project. No need to run `pod insta
 The MVVM+Router architecture has been chosen for this project. MVVM modules are located in the directory **Classe - > Presentation -> Modules**. Each module consists of the following classes: ModuleAssembly, ViewController, ViewModel, Router.
 
 MVVM Highlights
-* **ModuleAssembly** - an Assembly class is a part of Swinject DI framework for Swift for [grouping dependencies]("https://github.com/Swinject/Swinject/blob/master/Documentation/Assembler.md") together in one place. Inside of an assemble function, it describes how to connect MVVM module classes between each other, how to inject required dependencies, and registers those classes in a shared DI container.
+* **ModuleAssembly** - an Assembly class is a part of Swinject DI framework for Swift for [grouping dependencies](https://github.com/Swinject/Swinject/blob/master/Documentation/Assembler.md) together in one place. Inside of an assemble function, it describes how to connect MVVM module classes between each other, how to inject required dependencies, and registers those classes in a shared DI container.
 * **Router** is responsible for screens routing logic and feed them necessary data given by a view model class. It has a weak reference to a view controller in order to use UIKit features for presenting view controllers.
 
 There are no singletons in the project, instead classes that should have a single instance are registered with the "container" scope parameter in assembly files. As the DI container is shared within the app and has global access for assemblies it retains a single reference in it. For example *Classes -> Services -> ServicesAssembly, Line 14*.
