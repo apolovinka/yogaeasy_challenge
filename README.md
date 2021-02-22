@@ -32,6 +32,6 @@ There are no singletons in the project, instead classes that should have a singl
 ### Ways for Improvements
 
 * Add an intermediate repository layer between Services and Networking in order to encapsulate the data caching mechanism
-* Add a model to the Presenter layer which will take a responsibility to have a mapped data from a Model that is required for presenting on a screen. The concept of its use is not to use shared Model objects across multiple layers, but to have independent models for Presentation and Repository
-* Add a data persistency manager that would give more flexibility to data management e.g. persisting data in memory or a disc, configuration of persistent data lifetime
+* Add a model to the Presenter layer which will take a responsibility to have a mapped data from a Model that is required for presenting on a screen. The concept of its use is not to use shared Model objects across multiple layers, but to have independent models for Presentation and Repository layers
+* Add a data persistency manager that would give more flexibility to data management e.g. persisting data in memory or a disk, configuration of a persistent data lifetime
 * Add an application appearance class that will describe UI appearance customization in one place e.g. UINavigationBar.appearance()
