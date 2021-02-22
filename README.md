@@ -14,6 +14,9 @@
 * Core - architecture core-related classes such as MVVM, Networking, also might be used for iOS core framework wrappers.
 * Common - helpers, utils, and extensions classes
 
+### Dependencies Manager
+
+Cocoapods is the dependencies manager in this project. No need to run `pod install`, the Pods directory is included in the project repo to give faster access to the project sources.
 
 ### Achitecture Decision
 
