@@ -29,7 +29,7 @@ MVVM Highlights
 There are no singletons in the project, instead classes that should have a single instance are registered with the "container" scope parameter in assembly files. As the DI container is shared within the app and has global access for assemblies it retains a single reference in it. For example *Classes -> Services -> ServicesAssembly, Line 14*.
 
 
-### Ways for Improvements
+### Potential Ideas on Improvements
 
 * Add an intermediate repository layer between Services and Networking in order to encapsulate the data caching mechanism
 * Add a model to the Presenter layer which will take a responsibility to have a mapped data from a Model that is required for presenting on a screen. The concept is not to use shared Model objects across multiple layers, but to have independent models for Presentation and Repository layers
